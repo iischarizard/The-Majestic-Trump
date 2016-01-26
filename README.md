@@ -6,11 +6,7 @@
   - Config.java
   - Sprites.java
   
-  Comments have not been added to classes yet
-  
-  CLASSES AND THEIR USE
-
-  (classes are the files that contain the code)
+  *Comments have not been added to classes yet*
   
 **Classes that do not need editing:**
 
