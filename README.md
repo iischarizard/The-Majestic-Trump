@@ -1,4 +1,4 @@
-# The-Majestic-Trump
+# The Majestic Trump
 
 //Classes that have not been implemented yet:
   - *Sprites.java*
