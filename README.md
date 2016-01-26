@@ -5,7 +5,7 @@
   - *Audio.java*
   - *Config.java*
   
-  *Comments have not been added to classes yet*
+  ***Comments have not been added to classes yet***
   
 **Classes that do not need editing:**
 
