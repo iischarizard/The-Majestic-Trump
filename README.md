@@ -1,10 +1,9 @@
 # The-Majestic-Trump
 
 //Classes that have not been implemented yet:
-
+  - Sprites.java
   - Audio.java
   - Config.java
-  - Sprites.java
   
   *Comments have not been added to classes yet*
   
