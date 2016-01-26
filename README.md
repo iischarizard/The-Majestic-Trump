@@ -8,10 +8,10 @@
   <br>
   CLASSES AND THEIR USE<br>
   (classes are the files that contain the code)<br><br>
-<b>Classes that do not need editing</b><br>
-	Game.java <br>
-   The class that starts and runs the game with a single thread<br>
-   Does not need to be edited *unless you would like to change the title or have objects spawn at the beginning (refer to Coding Committee Classes)<br>
+**Classes that do not need editing**<br>
+Game.java <br>
+   ~The class that starts and runs the game with a single thread<br>
+   ~Does not need to be edited *unless you would like to change the title or have objects spawn at the beginning (refer to Coding    &nbsp;Committee Classes)<br>
 GameObject.java <br>
    The class that handles the objects of the game.<br>
    Does not need to be edited<br>
