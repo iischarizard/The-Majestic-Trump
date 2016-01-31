@@ -34,13 +34,13 @@ public class Game extends Canvas implements Runnable {
 		hud = new HUD();
 		spawner = new Spawn(handler, hud);
 		this.addKeyListener(new KeyInput(handler, this));
-		new Window(WIDTH, HEIGHT, "The Majestic Trump v0.01", this);
+		new Window(WIDTH, HEIGHT, /*THE PLACE WHERE YOU CHANGE THE TITLE-->*/"The Majestic Trump v0.02", this);
 		handler.addObject(new Trump(WIDTH / 2, HEIGHT - 50, ID.Player, handler,
 				Trump.trump,
-				"resources/trump.jpg"));
+				Sprites.TRUMPFILEPATH));
 		handler.addObject(new Clinton(WIDTH / 2, 0, ID.Enemy, handler,
 				Clinton.clinton,
-				"resources/clinton.jpg"));
+				Sprites.CLINTONFILEPATH));
 	}
 
 	public synchronized void start() {
@@ -107,7 +107,7 @@ public class Game extends Canvas implements Runnable {
 
 		g.setColor(Color.white);
 		g.fillRect(0, 0, WIDTH, HEIGHT);
-		g.drawImage(bg, 0, 0, WIDTH, HEIGHT, 0, 0, 614, 412, null);
+		g.drawImage(bg, 0, 0, WIDTH, HEIGHT, 0, 0, Sprites.BACKGROUNDIMAGEDIMENSIONS[0], Sprites.BACKGROUNDIMAGEDIMENSIONS[1], null);
 		g.setColor(Color.pink);
 		g.drawString("Created By Zachary Norman", 5, 20);
 
@@ -134,7 +134,7 @@ public class Game extends Canvas implements Runnable {
 		BufferedImage img = null;
 
 		try {
-			img = ImageIO.read(Game.class.getResourceAsStream("/resources/trumpxclinton.jpg"));
+			img = ImageIO.read(Game.class.getResourceAsStream(Sprites.BACKGROUNDFILEPATH));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
