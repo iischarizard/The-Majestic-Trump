@@ -35,9 +35,15 @@ public class Game extends Canvas implements Runnable {
 		spawner = new Spawn(handler, hud);
 		this.addKeyListener(new KeyInput(handler, this));
 		new Window(WIDTH, HEIGHT, /*THE PLACE WHERE YOU CHANGE THE TITLE-->*/"The Majestic Trump v0.02", this);
-		handler.addObject(new Trump(WIDTH / 2, HEIGHT - 50, ID.Player, handler,
-				Trump.trump,
-				Sprites.TRUMPFILEPATH));
+		
+		//SPAWNS THE STARTING OBJECTS
+		handler.addObject(new Trump(
+				/*Starting position*/WIDTH / 2, HEIGHT - 50, 
+				/*ID*/ID.Player, 
+				/*Does not need to be changed*/handler,
+				/*The image*/Trump.trump,
+				/*Does not need to be changed*/Sprites.TRUMPFILEPATH));
+		
 		handler.addObject(new Clinton(WIDTH / 2, 0, ID.Enemy, handler,
 				Clinton.clinton,
 				Sprites.CLINTONFILEPATH));
